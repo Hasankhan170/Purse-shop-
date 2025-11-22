@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+  --color-warm-ivory: #F6F3ED;
+  --color-deep-mocha: #4A3F35;
+  --color-soft-gold: #C7A87B;
+  --color-pure-black: #000000;
+  --color-cloud-grey: #E3E1DE;
+}
+
+.bg-warm-ivory { background-color: var(--color-warm-ivory); }
+.text-deep-mocha { color: var(--color-deep-mocha); }
+.text-soft-gold { color: var(--color-soft-gold); }
+.text-pure-black { color: var(--color-pure-black); }
+.border-cloud-grey { border-color: var(--color-cloud-grey); }
