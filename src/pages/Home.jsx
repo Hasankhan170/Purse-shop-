@@ -105,6 +105,7 @@ const images = [
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
+   const [selectedCategory, setSelectedCategory] = useState(null); // <-- add this
   const sliderRef = useRef(null);
 
 
@@ -175,7 +176,8 @@ export default function Hero() {
       </section>
 
       <Testimonials />
-      <Products />
+      <Products/>
+
       {/* <LatestCreations /> */}
     </>
   );
