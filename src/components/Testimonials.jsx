@@ -61,10 +61,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="w-full relative bg-warm-ivory py-16 bg-cover bg-center bg-no-repeat"
-  style={{
-    backgroundImage: "url('/bg.jpg')",
-  }}>
+    <div className="w-full relative bg-warm-ivory py-16">
 
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between mb-8 flex-nowrap">
         <h2 className="text-3xl font-extrabold text-deep-mocha max-[580px]:text-2xl">

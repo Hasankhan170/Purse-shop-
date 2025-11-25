@@ -145,12 +145,7 @@ export default function Products() {
   }, [selectedCategory]);
 
   return (
-   <section
-  className="py-24 bg-cover bg-center bg-no-repeat"
-  style={{
-    backgroundImage: "url('/bg.jpg')",
-  }}
->
+    <section className="py-24 bg-warm-ivory">
       <div className="max-w-7xl mx-auto px-6">
 
         {!selectedCategory && (
