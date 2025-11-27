@@ -193,7 +193,7 @@ export default function Navbar() {
   const [cartOpen, setCartOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-warm-ivory border-b border-cloud-grey">
+    <header className="sticky top-0 z-50 bg-warm-ivory border-b border-[#3E2723]">
       {/* Navbar */}
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-16 py-4">
         <Link to="/" className="text-2xl font-bold text-deep-mocha">
