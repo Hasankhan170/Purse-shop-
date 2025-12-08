@@ -4,10 +4,10 @@ import { FaYoutube, FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer
-  className="relative pt-10 pb-6 text-warm-ivory overflow-hidden bg-cover bg-center bg-no-repeat"
-  style={{
-    backgroundImage: "url('/bg.jpg')",
-  }}
+  className="relative pt-10 pb-6 bg-warm-ivory text-warm-ivory overflow-hidden bg-cover bg-center bg-no-repeat"
+  // style={{
+  //   backgroundImage: "url('/bg.jpg')",
+  // }}
 >
   {/* Top Footer */}
   <div className="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 relative z-10">
