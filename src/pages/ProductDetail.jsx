@@ -174,11 +174,29 @@ export default function ProductDetail() {
         {/* Main Product Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Image Gallery Section */}
-          <div className="lg:col-span-7">
-            <div className="flex flex-col lg:flex-row gap-6">
+          <div className="lg:col-span-7 ">
+            <div className="flex flex-col lg:flex-row gap-6 ">
               {/* Thumbnail Gallery - Vertical on left side */}
               {allImages.length > 1 && (
-                <div className="flex lg:flex-col gap-3 overflow-x-auto lg:overflow-x-visible lg:overflow-y-auto custom-scrollbar lg:max-h-[500px] order-2 lg:order-1">
+             <div
+  className="
+    flex
+    justify-center        /* 👈 mobile (below 768px) */
+    md:justify-center     /* 👈 tablet */
+    lg:justify-start      /* 👈 desktop (left side) */
+    lg:flex-col
+    gap-3
+    overflow-x-auto
+    lg:overflow-x-visible
+    lg:overflow-y-auto
+    custom-scrollbar
+    lg:max-h-[500px]
+    order-2
+    lg:order-1
+  "
+>
+
+
                   {allImages.map((image, index) => (
                     <button
                       key={index}
@@ -192,7 +210,7 @@ export default function ProductDetail() {
                       <img
                         src={image}
                         alt={`${product.name} view ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover "
                       />
                     </button>
                   ))}
