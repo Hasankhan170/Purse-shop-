@@ -150,8 +150,8 @@ export default function Products() {
 
         {!selectedCategory && (
           <>
-            <h1 className="text-4xl md:text-5xl font-bold text-center mb-5 text-[#5a4633] tracking-tight">
-              Explore Our <span className="text-white">Luxury Collection</span>
+            <h1 className="text-4xl md:text-5xl font-bold text-center mb-5 text-soft-gold tracking-tight">
+              Explore Our <span className="text-soft-gold">Luxury Collection</span>
             </h1>
 
             <p className="text-center text-[#5a4633] max-w-2xl mx-auto mb-16 text-lg">

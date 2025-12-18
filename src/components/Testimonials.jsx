@@ -279,7 +279,7 @@ const Testimonials = () => {
 
       <div className="w-full bg-warm-ivory py-16">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-extrabold text-deep-mocha">
+          <h2 className="text-3xl max-[482px]:text-2xl max-[410px]:text-xl font-extrabold text-deep-mocha">
             What Our Customers Say
           </h2>
 
