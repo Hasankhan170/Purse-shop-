@@ -47,7 +47,7 @@ export default function Navbar() {
           >
             <ShoppingBagIcon className="h-6 w-6" />
             {totalItems > 0 && (
-              <span className="absolute -top-2 -right-2 bg-deep-mocha text-warm-ivory text-xs font-semibold rounded-full h-5 w-5 flex items-center justify-center">
+              <span className="absolute -top-2 -right-2 bg-deep-mocha text-white text-xs font-semibold rounded-full h-5 w-5 flex items-center justify-center">
                 {totalItems}
               </span>
             )}
@@ -160,7 +160,7 @@ export default function Navbar() {
             <p className="text-lg font-bold mb-4 text-deep-mocha">Total: ${totalPrice}</p>
             <Link
               to="/checkout"
-              className="block bg-soft-gold text-deep-mocha py-2 sm:py-3 rounded-lg text-center font-semibold border border-cloud-grey 
+              className="block bg-deep-mocha text-white py-2 sm:py-3 rounded-lg text-center font-semibold border border-cloud-grey 
               hover:bg-deep-mocha hover:text-warm-ivory hover:border-soft-gold 
               transform hover:-translate-y-1 transition-all duration-200 text-sm sm:text-base"
               onClick={() => setCartOpen(false)}

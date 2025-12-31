@@ -54,7 +54,7 @@ export default function About() {
                 </p>
                 <Link
                   to="/products"
-                  className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-warm-ivory border border-transparent rounded-md px-7 bg-deep-mocha hover:bg-soft-gold"
+                  className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-deep-mocha hover:bg-soft-gold"
                 >
                   Shop Now
                 </Link>

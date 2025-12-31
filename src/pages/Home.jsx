@@ -168,7 +168,7 @@ export default function Hero() {
           </p>
           <Link
             to="/products"
-            className="mt-6 rounded-full bg-warm-ivory px-8 py-3 font-semibold text-soft-gold shadow-lg hover:bg-deep-mocha hover:text-black transition"
+            className="mt-6 rounded-full bg-deep-mocha px-8 py-3 font-semibold text-white shadow-lg hover:bg-warm-ivory hover:text-black transition"
           >
             👜 Explore Collection
           </Link>

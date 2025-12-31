@@ -152,7 +152,7 @@ export default function Checkout() {
             type="submit"
             disabled={loading}
             className="py-3 mt-2 text-lg font-semibold rounded-lg transition 
-           bg-soft-gold text-deep-mocha shadow-md 
+           bg-deep-mocha text-white shadow-md 
            hover:bg-[#3E2723] hover:!text-white"
 
           >

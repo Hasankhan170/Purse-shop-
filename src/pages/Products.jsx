@@ -190,7 +190,7 @@ export default function Products() {
                 setSelectedCategory(null);
                 navigate("/");
               }}
-              className="mt-4 mb-10 px-6 py-2 rounded-full bg-[#c8a97e] text-white shadow hover:bg-[#5a4633] transition"
+              className="mt-4 mb-10 px-6 py-2 rounded-full bg-deep-mocha text-white shadow hover:bg-[#5a4633] transition"
             >
               ← Back to Categories
             </button>

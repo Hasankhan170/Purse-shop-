@@ -111,7 +111,7 @@ export default function ProductCard({ product }) {
 
         <button
           onClick={handleAddToCart}
-          className="w-full px-5 py-2 bg-deep-mocha text-warm-ivory rounded-lg 
+          className="w-full px-5 py-2 bg-deep-mocha text-white rounded-lg 
                      border border-deep-mocha
                      hover:bg-soft-gold hover:text-deep-mocha 
                      hover:-translate-y-1 hover:border-soft-gold 

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --color-warm-ivory: #FFEDAC;   
+ --color-warm-ivory: #FFF6DC; 
   --color-deep-mocha: #3E2723;
   --color-soft-gold: #3E2723;
   --color-pure-black: #000000;
@@ -9,6 +9,8 @@
 }
 
 .bg-warm-ivory { background-color: var(--color-warm-ivory); }
+.bg-deep-mocha { background-color: var(--color-deep-mocha); }
+
 .text-deep-mocha { color: var(--color-deep-mocha); }
 .text-soft-gold { color: var(--color-soft-gold); }
 .text-pure-black { color: var(--color-pure-black); }
