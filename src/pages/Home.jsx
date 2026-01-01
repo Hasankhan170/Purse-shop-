@@ -92,6 +92,7 @@
 import { useState, useEffect, useRef } from "react";
 import Testimonials from "../components/Testimonials";
 import ScheduleBuilder from "../components/Clender";
+import Board from "../components/Bord";
 import Products from "./Products";
 import { Link } from "react-router-dom";
 
@@ -178,6 +179,7 @@ export default function Hero() {
       <Testimonials />
       <Products/>
       {/* <ScheduleBuilder /> */}
+      {/* <Board/> */}
 
       {/* <LatestCreations /> */}
     </>

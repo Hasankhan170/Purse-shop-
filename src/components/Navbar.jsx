@@ -63,10 +63,12 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Menu Drawer */}
-      <div
-        className={`fixed top-0 left-0 h-full w-64 sm:w-72 bg-warm-ivory shadow-xl transform transition-transform z-40 border-r border-cloud-grey
-        ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
-      >
+     <div
+  className={`fixed top-0 right-0 h-full w-64 sm:w-72 bg-warm-ivory shadow-xl
+  transform transition-transform z-40 border-l border-cloud-grey
+  ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
+>
+
         <div className="flex justify-between items-center p-4 border-b border-cloud-grey">
           <h2 className="text-xl font-semibold text-deep-mocha">Menu</h2>
           <button
