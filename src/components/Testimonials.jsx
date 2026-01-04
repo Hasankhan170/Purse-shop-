@@ -86,7 +86,7 @@ const Testimonials = () => {
                 <div
                   onClick={() => navigate(`/product/${product.id}`)}
                   className="
-                  bg-white 
+                  bg-[#3E2723] 
                   rounded-2xl 
                   shadow-[0_4px_12px_rgba(0,0,0,0.08)]
                   hover:shadow-[0_6px_16px_rgba(0,0,0,0.12)]
@@ -98,7 +98,7 @@ const Testimonials = () => {
                 >
                   <div className="p-6 flex flex-col items-center">
                     <div
-                      className="h-[180px] w-[180px] bg-white mb-4 flex justify-center 
+                      className="h-[180px] w-[180px]  mb-4 flex justify-center 
                       rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.07)]"
                     >
                       <img
@@ -110,22 +110,22 @@ const Testimonials = () => {
 
                     <div className="text-center">
                       {product.rating && (
-                        <div className="inline-flex items-center gap-1 mb-2 bg-soft-gold text-xs rounded px-2 py-1 font-bold text-black">
+                        <div className="inline-flex items-center gap-1 mb-2 bg-soft-gold text-xs rounded px-2 py-1 font-bold text-white">
                           ⭐ {product.rating} ({product.reviewCount})
                         </div>
                       )}
 
-                      <h3 className="text-deep-mocha font-semibold text-base mb-2 line-clamp-2">
+                      <h3 className="text-white font-semibold text-base mb-2 line-clamp-2">
                         {product.name}
                       </h3>
 
                       <div className="flex items-center justify-center gap-3 flex-wrap">
-                        <span className="text-soft-gold text-xl font-bold">
+                        <span className="text-white text-xl font-bold">
                           Rs {product.price.toLocaleString()}
                         </span>
 
                         {product.originalPrice && (
-                          <span className="text-sm text-cloud-grey line-through">
+                          <span className="text-sm text-white line-through">
                             Rs {product.originalPrice.toLocaleString()}
                           </span>
                         )}
