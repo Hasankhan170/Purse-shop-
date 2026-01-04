@@ -158,28 +158,7 @@ export const products = [
       "https://cdn.pixabay.com/photo/2015/08/10/20/14/handbag-883113_1280.jpg",
     ],
   },
-  {
-    id: 8,
-    name: "Urban Shoulder Bag",
-    category: "Shoulder Bag",
-    desc: "Modern design",
-    description: "Trendy shoulder bag featuring contemporary design elements, ideal for urban lifestyle and fashion-forward individuals.",
-    price: 1299,
-    originalPrice: 1499,
-    discountPercent: 13,
-    rating: 4.2,
-    reviewCount: 43,
-    material: "Synthetic Leather",
-    color: "Charcoal Gray",
-    style: "Modern / Urban",
-    warranty: "1 Year",
-    image: "https://cdn.pixabay.com/photo/2020/03/13/04/06/handmade-4926873_1280.jpg",
-    extraImages: [
-      "https://cdn.pixabay.com/photo/2020/03/13/04/06/handmade-4926873_1280.jpg",
-      "https://cdn.pixabay.com/photo/2020/03/13/04/06/handmade-4926873_1280.jpg",
-      "https://cdn.pixabay.com/photo/2020/03/13/04/06/handmade-4926873_1280.jpg",
-    ],
-  },
+  
 
   // ---------- Tote Bags ----------
   {
@@ -248,29 +227,7 @@ export const products = [
      "https://cdn.pixabay.com/photo/2015/11/19/19/01/purse-1051714_1280.jpg",
     ],
   },
-  {
-    id: 12,
-    name: "Eco Shopper Tote",
-    category: "Tote Bags",
-    desc: "Sustainable & stylish",
-    description: "Eco-friendly tote bag made from sustainable materials, perfect for environmentally conscious shoppers.",
-    price: 849,
-    originalPrice: 999,
-    discountPercent: 15,
-    rating: 4.5,
-    reviewCount: 78,
-    material: "Recycled Cotton",
-    color: "Olive Green",
-    style: "Eco-Friendly / Casual",
-    warranty: "1 Year",
-    image: "https://cdn.pixabay.com/photo/2015/05/31/14/43/handbag-791978_1280.jpg",
-    extraImages: [
-    "https://cdn.pixabay.com/photo/2015/05/31/14/43/handbag-791978_1280.jpg",
-    "https://cdn.pixabay.com/photo/2015/05/31/14/43/handbag-791978_1280.jpg",
-    "https://cdn.pixabay.com/photo/2015/05/31/14/43/handbag-791978_1280.jpg",
-    ],
-  },
-
+ 
   // ---------- Clutches ----------
   {
     id: 13,
@@ -294,28 +251,7 @@ export const products = [
          "https://cdn.pixabay.com/photo/2017/08/07/03/02/handbag-2599086_1280.jpg",
     ],
   },
-  {
-    id: 14,
-    name: "Mini Party Clutch",
-    category: "Clutches",
-    desc: "Compact & stylish",
-    description: "Small yet stylish clutch perfect for parties and special occasions, featuring elegant design and secure closure.",
-    price: 1299,
-    originalPrice: 1599,
-    discountPercent: 19,
-    rating: 4.6,
-    reviewCount: 52,
-    material: "Satin",
-    color: "Rose Pink",
-    style: "Party / Elegant",
-    warranty: "6 Months",
-    image: "https://cdn.pixabay.com/photo/2015/08/10/20/14/purse-883112_1280.jpg",
-    extraImages: [
-     "https://cdn.pixabay.com/photo/2015/08/10/20/14/purse-883112_1280.jpg",
-     "https://cdn.pixabay.com/photo/2015/08/10/20/14/purse-883112_1280.jpg",
-     "https://cdn.pixabay.com/photo/2015/08/10/20/14/purse-883112_1280.jpg",
-    ],
-  },
+ 
   {
     id: 15,
     name: "Luxury Metallic Clutch",
@@ -340,28 +276,7 @@ export const products = [
   },
 
   // ---------- Bridal Purse ----------
-  {
-    id: 16,
-    name: "Wallet on Chain",
-    category: "Bridal Purse",
-    desc: "Compact luxury",
-    description: "This wallet on chain is the definition of modern luxury — compact yet functional, with an elegant metallic strap.",
-    price: 2199,
-    originalPrice: 2499,
-    discountPercent: 12,
-    rating: 4.8,
-    reviewCount: 112,
-    material: "Genuine Leather with Metal Chain",
-    color: "Jet Black",
-    style: "Luxury / Minimalist",
-    warranty: "1 Year",
-    image: "https://cdn.pixabay.com/photo/2015/08/10/20/15/handbag-883116_1280.jpg",
-    extraImages: [
-      "https://cdn.pixabay.com/photo/2017/08/07/03/02/handbag-2599085_1280.jpg",
-      "https://cdn.pixabay.com/photo/2017/08/07/03/03/handbag-2599090_1280.jpg",
-      "https://cdn.pixabay.com/photo/2017/08/07/03/02/handbag-2599086_1280.jpg"
-    ],
-  },
+  
   {
     id: 17,
     name: "Bridal Clutch",
