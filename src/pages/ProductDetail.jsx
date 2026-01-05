@@ -58,9 +58,8 @@ export default function ProductDetail() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Collapsible sections state - all closed by default on mobile, open on desktop
   const [openSections, setOpenSections] = useState({
-    description: false, // Open on desktop, closed on mobile
+    description: false, 
     specifications: false,
     features: false,
     shipping: false,
@@ -153,10 +152,8 @@ export default function ProductDetail() {
 
   const toggleWishlist = () => {
     setIsWishlisted(!isWishlisted);
-    // Add your wishlist logic here
   };
 
-  // Collapsible Section Component
   const CollapsibleSection = ({
     title,
     children,
@@ -199,102 +196,114 @@ export default function ProductDetail() {
           {/* Image Gallery Section */}
           <div className="lg:col-span-7">
             <div className="flex flex-col lg:flex-row gap-4 md:gap-6">
-              {/* Thumbnail Gallery - Vertical on left side */}
-              {allImages.length > 1 && (
-                <div
-                  className="
-                    flex
-                    justify-center
-                    md:justify-center
-                    lg:justify-start
-                    lg:flex-col
-                    gap-2
-                    md:gap-3
-                    overflow-x-auto
-                    lg:overflow-x-visible
-                    lg:overflow-y-auto
-                    custom-scrollbar
-                    lg:max-h-[500px]
-                    order-2
-                    lg:order-1
-                    pb-2
-                  "
-                >
-                  {allImages.map((image, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setSelectedImageIndex(index)}
-                      className={`flex-shrink-0 w-44 h-30 md:w-20 md:h-20 lg:w-20 lg:h-20 rounded-lg md:rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 ${
-  selectedImageIndex === index
-    ? "scale-105"
-    : ""
-}`}
+              
+{allImages.length > 1 && (
+ <div
+  className="
+    grid grid-flow-col auto-cols-max gap-2
+    overflow-x-auto
+    lg:grid lg:grid-flow-row lg:auto-rows-max
+    lg:gap-3
+    lg:overflow-x-visible
+    lg:overflow-y-auto
+    custom-scrollbar
+    lg:max-h-[500px]
+    order-2
+    lg:order-1
+    py-2
+    px-2
+    max-[1024px]:w-full
+      mx-auto
+  "
+>
+  {allImages.map((image, index) => (
+    <button
+      key={index}
+      onClick={() => setSelectedImageIndex(index)}
+      className={`
+        w-16 h-16
+        max-[1024px]:w-49 max-[1024px]:h-30
+        max-[811px]:w-46 max-[811px]:h-30
+        max-[603px]:w-34 max-[603px]:h-30
+        max-[462px]:w-25 
 
-                    >
-                      <img
-                        src={image}
-                        alt={`${product.name} view ${index + 1}`}
-                        className="w-full h-full object-cover"
-                      />
-                    </button>
-                  ))}
-                </div>
-              )}
 
-              {/* Main Image Container */}
-              <div className="flex-1 order-1 lg:order-2">
-                <div className="lg:p-2">
-                  <div className="relative group">
-                    <div className="w-full h-auto rounded-xl md:rounded-2xl overflow-hidden">
-                      <img
-                        src={allImages[selectedImageIndex]}
-                        alt={product.name}
-                        className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
-                        style={{
-                          maxHeight: "400px",
-                          minHeight: "300px",
-                          width: "100%",
-                          objectFit: "contain",
-                        }}
-                      />
-                    </div>
 
-                    {allImages.length > 1 && (
-                      <>
-                        <button
-                          onClick={prevImage}
-                          className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white/95 hover:bg-white rounded-full shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-200"
-                        >
-                          <FaArrowLeft className="text-gray-800 text-lg md:text-xl" />
-                        </button>
+        rounded-lg
+        
+        md:rounded-xl
+        mx-auto
+        overflow-hidden
+        transition-all
+        duration-300
+        hover:scale-105
+        ${selectedImageIndex === index }
+      `}
+    >
+      <img
+        src={image}
+        alt={`${product.name} view ${index + 1}`}
+        className="w-full h-full object-cover"
+      />
+    </button>
+  ))}
+</div>
+)}
 
-                        <button
-                          onClick={nextImage}
-                          className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white/95 hover:bg-white rounded-full shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-200"
-                        >
-                          <FaArrowRight className="text-gray-800 text-lg md:text-xl" />
-                        </button>
-                      </>
-                    )}
-                    {/* Image Dots */}
-                    {allImages.length > 1 && (
-                      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1.5 bg-white/80 backdrop-blur-sm rounded-full">
-                        {allImages.map((_, index) => (
-                          <button
-                            key={index}
-                            onClick={() => setSelectedImageIndex(index)}
-                            className={`transition-all duration-300 rounded-full ${
-                              selectedImageIndex === index
-                                ? "w-2 h-2 md:w-2.5 md:h-2.5 bg-[#C7A87B]"
-                                : "w-1.5 h-1.5 md:w-2 md:h-2 bg-gray-400 hover:bg-[#C7A87B]"
-                            }`}
-                          />
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
+              
+<div className="flex-1 order-1 lg:order-2">
+  <div className="lg:p-2">
+    <div className="relative group">
+      <div className="w-full h-auto rounded-xl md:rounded-2xl overflow-hidden ">
+        <img
+          src={allImages[selectedImageIndex]}
+          alt={product.name}
+          className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 "
+          style={{
+            width: "100%",
+            objectFit: "contain",
+          }}
+        />
+        
+        {/* Arrows on top of the image */}
+       {allImages.length > 1 && (
+  <>
+    <button
+      onClick={prevImage}
+      className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white/95 hover:bg-white rounded-full shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-200 z-10"
+    >
+      <FaArrowLeft className="text-gray-800 text-lg md:text-xl" />
+    </button>
+
+    <button
+      onClick={nextImage}
+      className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white/95 hover:bg-white rounded-full shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-200 z-10"
+    >
+      <FaArrowRight className="text-gray-800 text-lg md:text-xl" />
+    </button>
+  </>
+)}
+      </div>
+
+      {/* Image Dots */}
+      {allImages.length > 1 && (
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1.5 bg-white/80 backdrop-blur-sm rounded-full z-10">
+          {allImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setSelectedImageIndex(index)}
+              className={`transition-all duration-300 rounded-full ${
+                selectedImageIndex === index
+                  ? "w-2 h-2 md:w-2.5 md:h-2.5 bg-[#C7A87B]"
+                  : "w-1.5 h-1.5 md:w-2 md:h-2 bg-gray-400 hover:bg-[#C7A87B]"
+              }`}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</div>
             </div>
           </div>
 
@@ -672,38 +681,56 @@ export default function ProductDetail() {
       </div>
 
       <style jsx>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(-8px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fadeIn {
-          animation: fadeIn 0.3s ease-out;
-        }
-        .custom-scrollbar::-webkit-scrollbar {
-          height: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: transparent;
-          border-radius: 10px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: transparent;
-          border-radius: 10px;
-        }
-        
-        @media (min-width: 1024px) {
-          .custom-scrollbar::-webkit-scrollbar {
-            width: 6px;
-            height: auto;
-          }
-        }
-      `}</style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* Mobile पर छोटी images एक लाइन में display करने के लिए */
+  @media (max-width: 768px) {
+    .thumbnail-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      overflow-x: visible;
+      padding-bottom: 0;
+    }
+    
+    .thumbnail-button {
+      flex: 0 0 calc(33.333% - 8px);
+      max-width: calc(33.333% - 8px);
+    }
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 1024px) {
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: auto;
+    }
+  }
+`}</style>
     </section>
   );
 }
