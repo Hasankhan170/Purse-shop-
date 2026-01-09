@@ -12,9 +12,9 @@ const Testimonials = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full bg-warm-ivory py-16">
+    <div className="w-full bg-warm-ivory py-16 px-5">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between mb-8">
-        <h2 className="text-3xl max-[482px]:text-2xl max-[410px]:text-xl font-extrabold text-deep-mocha">
+        <h2 className="text-3xl max-[482px]:text-2xl max-[449px]:text-xl  font-extrabold text-deep-mocha">
           What Our Customers Say
         </h2>
 
@@ -30,27 +30,36 @@ const Testimonials = () => {
         <div className="flex items-center relative">
           
           <div className="w-full relative">
-            <Swiper
-              modules={[Navigation, Pagination]}
-              navigation={{
-                nextEl: ".swiper-button-next-custom",
-                prevEl: ".swiper-button-prev-custom",
-              }}
-              pagination={{
-                clickable: true,
-                el: ".custom-pagination",
-                bulletClass: "swiper-pagination-bullet-custom",
-                bulletActiveClass: "swiper-pagination-bullet-active-custom",
-              }}
-              spaceBetween={28}
-              slidesPerView={1}
-              breakpoints={{
-                640: { slidesPerView: 2, spaceBetween: 24 },
-                1024: { slidesPerView: 3, spaceBetween: 28 },
-              }}
-              loop
-              className="!pb-16"
-            >
+          <Swiper
+  modules={[Navigation, Pagination]}
+  navigation={{
+    nextEl: ".swiper-button-next-custom",
+    prevEl: ".swiper-button-prev-custom",
+  }}
+  pagination={{
+    clickable: true,
+    el: ".custom-pagination",
+    bulletClass: "swiper-pagination-bullet-custom",
+    bulletActiveClass: "swiper-pagination-bullet-active-custom",
+  }}
+  spaceBetween={28}
+  loop
+  className="!pb-16"
+  breakpoints={{
+    0: { 
+      slidesPerView: 1.5, // show 1 slide + tiny peek of next
+      spaceBetween: 16,
+    },
+    640: { 
+      slidesPerView: 2.4, // 2 slides + peek of 3rd
+      spaceBetween: 24,
+    },
+    1024: { 
+      slidesPerView: 3.3, // 3 slides + peek of 4th
+      spaceBetween: 28,
+    },
+  }}
+>
               {products.map((product) => (
                 <SwiperSlide key={product.id}>
                   <div
